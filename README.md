@@ -15,3 +15,4 @@ There are several states to consider. Deployments can be delayed greatly by user
 
 ## References
 * [Get-CimInstance by Microsoft](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-7)
+* [Getting the user idle time with C#](https://www.codeproject.com/articles/13384/getting-the-user-idle-time-with-c)
