@@ -18,7 +18,8 @@ There are several states to consider. Deployments can be delayed greatly by user
 In this case, no user is required for the installation. This is pseudocode:
 
 ```powershell
-$UserLogonState = Get-CimInstance Win32_... | Select-Object -Property UserName
+$UserLogonState = Get-CimInstance -ClassName Win32_ComputerSystem | Select-Object -Property Name
+# User property UserName if domain is needed as well
 if($UserLogonState){
     # A user is logged on; deal with that.
     # Get user idle time.
