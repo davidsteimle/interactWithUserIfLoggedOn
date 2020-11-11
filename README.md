@@ -1,6 +1,8 @@
 # Interact with User if Logged On
 When deploying software to remote systems, it is often necessary to interact with the user in order to close applications, or reboot their system. SCCM disallows interaction with user unless a user is logged on. Find a way around this.
 
+*Note: SCCM will allow you to select 'whether or not a user is logged on' and 'allow user to interact', then warn you that this is a bad idea. In truth, the application will fail on the client if no user is logged on. At least this is true in my Enterprise. Your mileage may vary.*
+
 ## SCCM Deployment
 _User Experience_ should be 'whether or not user is logged on' and do not check 'allow user to interact'.
 
